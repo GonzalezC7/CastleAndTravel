@@ -1,0 +1,502 @@
+/**
+ * style.css - Style principal de la page
+ */
+
+/**
+ * Polices
+ */
+
+/* Moon Dance */
+@font-face {
+  font-family: "Moon Dance";
+  src: url("assets/fonts/Moon_Dance/MoonDance-Regular.ttf");
+}
+
+/* Poppins */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+
+/* A FAIRE: Implémenter le style de la page selon la maquette */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  border-top: 6px #ecd537 solid;
+  background-color: #1f1f1f;
+  color: white;
+  font-family: "Poppins";
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+/* Début de la barre Nav */
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+}
+
+.box-logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.logo {
+  height: 50px;
+  width: 25%;
+}
+
+.nav-text {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.carre {
+  background-color: #ecd537;
+  height: 10px;
+  width: 10px;
+}
+
+/* Fin de la barre Nav */
+
+/* *********************************** */
+
+/* DEBUT HEADER Image avec Titres et bouton */
+
+.contenant {
+  position: relative;
+  text-align: center;
+}
+
+.big-img {
+  height: 600px;
+  width: 100%;
+  opacity: 0.4;
+}
+
+.text_center {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.litle-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.big-title {
+  font-family: "Moon Dance";
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.yellow-button {
+  background-color: #ecd537;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 40px;
+  font-family: "Poppins";
+  color: white;
+  border: none;
+}
+
+/* FIN HEADER Image avec Titres et bouton */
+
+/* Sous-titre avec carrés jaunes */
+
+.box-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 25px;
+  margin: 50px;
+}
+
+/* ********* */
+
+/* Début des 4 blocks blancs */
+
+.bigBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.box {
+  background-color: white;
+  border-radius: 5px;
+  height: 150px;
+  width: 260px;
+  color: #1f1f1f;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* Fin des 4 blocks blancs avec symboles */
+
+/* ********* */
+
+/* Début BOX => 7 photos */
+
+.big-box-pictures {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pictures-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.litle-picture {
+  height: 160px;
+  width: 300px;
+  margin: 12px;
+}
+
+.last-picture {
+  height: 160px;
+  width: 620px;
+  margin: 12px;
+}
+
+/* Fin BOX => 7 photos */
+
+/* CONTACTS */
+
+.big-lien-box {
+  display: flex;
+  justify-content: center;
+}
+
+.lien-box1 {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+.lien-box2 {
+  height: 150px;
+  color: white;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.lien {
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f1f1f;
+}
+
+/* ********* */
+
+.footer {
+  font-family: "Poppins";
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin: 5%;
+}
+
+/* ********* */
+/* ********* RESPONSIVE MOBILE 390px - 844px ********* */
+/* ********* */
+
+@media (width: 390px) AND (max-width: 844px) {
+  /* Début de la barre Nav */
+
+  .navbar {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-logo {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 80px;
+    width: 35%;
+    margin-top: 20px;
+  }
+
+  .nav-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .carre {
+    background-color: #ecd537;
+    height: 10px;
+    width: 10px;
+  }
+
+  /* Fin de la barre Nav */
+
+  /* *********************************** */
+
+  /* DEBUT HEADER Image avec Titres et bouton */
+
+  .box-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .contenant {
+    position: relative;
+    text-align: center;
+  }
+
+  .big-img {
+    height: 600px;
+    width: 100%;
+    opacity: 0.4;
+  }
+
+  .text_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .litle-title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .big-title {
+    font-family: "Moon Dance";
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .yellow-button {
+    background-color: #ecd537;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 40px;
+    font-family: "Poppins";
+    color: white;
+    border: none;
+  }
+
+  /* FIN HEADER Image avec Titres et bouton */
+
+  /* ********* */
+
+  /* Début des 4 blocks blancs */
+
+  .bigBox {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    background-color: white;
+    border-radius: 5px;
+    height: 250px;
+    width: 140px;
+    color: #1f1f1f;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  /* Fin des 4 blocks blancs avec symboles */
+
+  /* ********* */
+
+  /* Début BOX => 7 photos */
+
+  .big-box-pictures {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pictures-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .litle-picture {
+    height: 160px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .last-picture {
+    height: 160px;
+    width: 390px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  /* Fin BOX => 7 photos */
+
+  /* CONTACTS */
+
+  .big-lien-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lien-box1 {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .lien-box2 {
+    height: 200px;
+    color: white;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .lien {
+    margin-left: 10px;
+    background-color: white;
+    height: 35px;
+    width: 35px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1f1f1f;
+  }
+}
+
+/* ********* */
+/* ********* RESPONSIVE TABLETTE 820px - 1180px ********* */
+/* ********* */
+
+@media (min-width: 820px) AND (max-width: 1180px) {
+  .navbar {
+    height: 80px;
+    width: 100%;
+    display: flex;
+  }
+
+  .box-logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .logo {
+    height: 50px;
+    width: 40%;
+  }
+
+  .bigBox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .box {
+    background-color: white;
+    border-radius: 5px;
+    height: 350px;
+    width: 160px;
+    color: #1f1f1f;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ********* */
